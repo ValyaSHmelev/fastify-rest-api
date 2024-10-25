@@ -8,5 +8,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "amqplib": "^0.10.4",
+    "dotenv": "^16.4.5",
+    "fastify": "^5.0.0",
+    "fastify-mongodb": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
 }
