@@ -1,0 +1,20 @@
+# Dockerfile
+FROM node:18-alpine
+
+# Установим рабочую директорию
+WORKDIR /app
+
+# Копируем package.json и package-lock.json
+COPY package*.json ./
+
+# Установим зависимости
+RUN npm install --production
+
+# Копируем остальные файлы
+COPY . .
+
+# Открываем порт
+EXPOSE 3000
+
+# Запуск приложения
+CMD ["npm", "start"]
